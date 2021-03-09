@@ -1,0 +1,11 @@
+[Unit]
+Description=Service B
+After=A.service
+
+[Service]
+Type=simple
+ExecStart=/tmp/a.out
+
+[Install]
+WantedBy=multi-user.target
+

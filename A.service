@@ -1,0 +1,10 @@
+[Unit]
+Description=Service A
+
+[Service]
+Type=notify
+ExecStart=/tmp/a.out
+
+[Install]
+WantedBy=multi-user.target
+
